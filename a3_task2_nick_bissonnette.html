@@ -662,7 +662,7 @@ hooks_by_month</code></pre>
 <p>Here’s what that looks like for the example described above:</p>
 <pre class="r"><code># Run this code: 
 
-storm_season &lt;- storms %&gt;% # Start from storms data
+storm_seasons &lt;- storms %&gt;% # Start from storms data
   mutate(seasons = case_when( # Add a new column season, which contains... 
     month %in% c(12, 1, 2) ~ &quot;winter&quot;, # &quot;winter&quot; if month is 12, 1 or 2
     month %in% c(3, 4, 5) ~ &quot;spring&quot;, # &quot;spring&quot; if month is 3, 4, or 5
